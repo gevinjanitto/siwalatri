@@ -1,0 +1,104 @@
+{
+  "project_name": "Siwalatri Terpadu - Klungkung Harbour & Fast Boat Ticketing",
+  "app_type": "hybrid_fullstack",
+  "theme": "light",
+  "color_palette": {
+    "primary": {
+      "deep_ocean_blue": "#0A3A60",
+      "sea_blue": "#0F52BA",
+      "caribbean_blue": "#0077B6",
+      "balinese_teal": "#00A896",
+      "emerald_mint": "#02C39A",
+      "fresh_green": "#10B981"
+    },
+    "gradients": {
+      "ocean_to_teal": "bg-gradient-to-r from-[#0A3A60] via-[#0077B6] to-[#00A896]",
+      "mint_glow": "bg-gradient-to-br from-[#00A896]/10 via-[#02C39A]/20 to-emerald-500/10",
+      "hero_overlay": "bg-gradient-to-b from-[#0A3A60]/80 via-[#0A3A60]/40 to-transparent"
+    },
+    "neutrals": {
+      "canvas_bg": "#F8FAFC",
+      "card_bg": "#FFFFFF",
+      "sidebar_bg": "#0F172A",
+      "text_primary": "#0F172A",
+      "text_secondary": "#475569",
+      "text_muted": "#64748B",
+      "border_subtle": "#E2E8F0"
+    },
+    "accents": {
+      "coral_amber": "#F59E0B",
+      "soft_red": "#EF4444",
+      "cyan_badge": "#06B6D4"
+    }
+  },
+  "typography": {
+    "heading_font": "Plus Jakarta Sans, sans-serif",
+    "body_font": "Inter, sans-serif",
+    "mono_font": "JetBrains Mono, monospace",
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight",
+      "h3": "text-xl sm:text-2xl font-semibold",
+      "h4": "text-lg sm:text-xl font-semibold",
+      "body": "text-base text-slate-700 leading-relaxed",
+      "caption": "text-xs uppercase tracking-widest font-semibold text-teal-700"
+    }
+  },
+  "layout_and_style_directions": {
+    "landing_style": "Visa Travels style: High-impact hero photo with masked editorial title, sticky glassmorphic bottom search bar strip with departure/destination date pickers and 'Cari Tiket' button. Editorial section title 'Pilih Destinasi Favorit', destination cards with live slot badges, carousel prev/next buttons, and slow editorial ticker marquee.",
+    "auth_style": "Kreative style: Split screen modal/page. Left side features a high-res 3D Balinese ocean/fastboat artwork card with soft gradient badge. Right side features crisp form with bottom border line inputs, dark pill 'Masuk / Daftar' button, and Google OAuth option.",
+    "dashboard_style": "Realty Hub style: Light grey canvas (#F8FAFC), sticky left navigation sidebar with dark pill active states and category badges, top header with harbour switcher (Dermaga Padangbai / Kusamba / Sampalan / Nusa Penida), soft pastel summary metric tiles (Trip Hari Ini, Total Penumpang, Retribusi, Cash/QRIS/VA mix), live feed right column, and 24px rounded cards with crisp subtle borders."
+  },
+  "key_components_to_build": [
+    {
+      "name": "Public Landing Page",
+      "subcomponents": [
+        "Header Navigation (Logo, Jadwal, Info, Partner, Kontak, Button Login/Register)",
+        "Hero Section with Masked Text & Search Strip",
+        "Pengumuman Banner (Informasi Cuaca & Gelombang BMKG Klungkung)",
+        "Jadwal Hari Ini Cards (Dermaga Asal/Tujuan, Jam WITA, Armada, Status Persiapan/Berlayar/Sandar)",
+        "Destinasi Cards Carousel (Goa Giri Putri, Crystal Bay, Pantai Atuh, Kelingking Beach)"
+      ]
+    },
+    {
+      "name": "Modul Tiket (Passenger Flow)",
+      "subcomponents": [
+        "Search Zona & Filter Form (Asal, Tujuan, Tanggal, Jumlah Pass)",
+        "List Keberangkatan (Departure Cards with Cutoff Timer & Seat availability)",
+        "Order Form (Data Pemesan + Data Penumpang Orang / Non-Orang seperti motor/barang)",
+        "Payment Selector (QRIS Dynamic with countdown timer, Virtual Account BCA/BRI/Mandiri)",
+        "Payment Confirmation & E-Ticket (Barcode & QR Code generation per passenger unit)",
+        "Riwayat Pemesanan & Guest Checkout lookup"
+      ]
+    },
+    {
+      "name": "Modul Petugas & Officer Dashboard",
+      "subcomponents": [
+        "Petugas Login Screen",
+        "Daily Operations Dashboard (Total Penumpang, Trip Realtime, Retribusi, Cash vs QRIS vs VA)",
+        "External Fleets Live Monitor (Gangga Express, Sekar Jaya, The Angkal Fast Cruise)",
+        "Master Data Management (Kapal, Jenis Penumpang, Dermaga, Rute, SOP)",
+        "Operator Daily/Monthly Reports & Rekonsiliasi VA/QRIS",
+        "Ticket Cutoff Time & SOP Approval Settings Modal"
+      ]
+    }
+  ],
+  "motion_and_effects": {
+    "smooth_scroll": "Lenis smooth scroll enabled",
+    "framer_motion": "Staggered scroll triggers, smooth tab switches, slide-over order panels, and modal reveals",
+    "glassmorphism": "backdrop-blur-md bg-white/80 border border-white/40 shadow-sm"
+  },
+  "image_urls": {
+    "hero_fastboat": "https://images.unsplash.com/photo-1737398574225-bc25c46113d4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwyfHxiYWxpJTIwZmFzdCUyMGJvYXQlMjBiZWFjaCUyMG9jZWFuJTIwdHVycXVvaXNlfGVufDB8fHx8MTc5NDYzMzA5MHww&ixlib=rb-4.1.0&q=85",
+    "nusa_penida_crystal_bay": "https://images.unsplash.com/photo-1697900128005-bd2a072b8472?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzR8MHwxfHNlYXJjaHwzfHxudXNhJTIwcGVuaWRhJTIwY3J5c3RhbCUyMGJheSUyMGJlYWNoJTIwY2xpZmZ8ZW58MHx8fHwxNzk0NjMzMDkwfDA&ixlib=rb-4.1.0&q=85",
+    "atuh_beach_cliffs": "https://images.unsplash.com/photo-1541666282672-5f4aad922c63?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzR8MHwxfHNlYXJjaHwxfHxudXNhJTIwcGVuaWRhJTIwY3J5c3RhbCUyMGJheSUyMGJlYWNoJTIwY2xpZmZ8ZW58MHx8fHwxNzk0NjMzMDkwfDA&ixlib=rb-4.1.0&q=85",
+    "goa_giri_putri": "https://images.unsplash.com/photo-1767652199516-ce5f6e797e87?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxiYWxpJTIwZmFzdCUyMGJvYXQlMjBiZWFjaCUyMG9jZWFuJTIwdHVycXVvaXNlfGVufDB8fHx8MTc5NDYzMzA5MHww&ixlib=rb-4.1.0&q=85"
+  },
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Always include data-testid on interactive elements (buttons, inputs, tabs, search, selectors).",
+    "Use Javascript (.js / .jsx) components.",
+    "Ensure high contrast readable text over images with dark overlay gradients (bg-slate-900/60).",
+    "Use sonner for toast notifications.",
+    "Implement rich interactive sample state in React to allow seamless clicking through from booking to payment, e-ticket generation, and staff officer dashboard management."
+  ]
+}
